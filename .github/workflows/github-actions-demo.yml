@@ -21,4 +21,7 @@ jobs:
       - name: Commit and push changes
         run: |
           git status
+          git add -A
+          git commit -m "commit message"
+          git push
       - run: echo "🍏 This job's status is ${{ job.status }}."
