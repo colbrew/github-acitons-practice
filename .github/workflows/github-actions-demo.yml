@@ -20,6 +20,8 @@ jobs:
           ls ${{ github.workspace }}
       - name: Commit and push changes
         run: |
+          git config --global user.name "colbrew"
+          git config --global user.email "danrcolman@gmail.com"
           git status
           git add -A
           git commit -m "commit message"
